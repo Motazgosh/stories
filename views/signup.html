@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sign Up</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f0f2f5;
+        }
+
+        .container {
+            width: 300px;
+            padding: 16px;
+            background-color: #fff;
+            margin: 0 auto;
+            margin-top: 100px;
+            box-shadow: 0px 0px 10px 0px rgba(0, 0, 0, 0.1);
+        }
+
+        h1 {
+            text-align: center;
+            color: #4caf50;
+            margin-bottom: 30px;
+        }
+
+        label {
+            display: block;
+            margin-bottom: 5px;
+            color: #333;
+        }
+
+        input[type="text"], input[type="password"], input[type="email"] {
+            width: 100%;
+            padding: 12px 20px;
+            margin: 8px 0;
+            box-sizing: border-box;
+            border: 1px solid #ccc;
+            border-radius: 4px;
+            outline: none;
+        }
+
+        input[type="submit"] {
+            background-color: #4caf50;
+            color: white;
+            padding: 14px 20px;
+            margin: 8px 0;
+            border: none;
+            cursor: pointer;
+            width: 100%;
+            border-radius: 4px;
+        }
+
+        input[type="submit"]:hover {
+            background-color: #45a049;
+        }
+
+        .header {
+            text-align: center;
+            margin-bottom: 20px;
+        }
+
+        .header a {
+            margin: 0 10px;
+            text-decoration: none;
+            color: #333;
+        }
+        footer {
+            background-color: #333;
+            color: white;
+            text-align: center;
+            padding: 1rem;
+            margin-top: 1rem;
+        }
+    </style>
+</head>
+<body>
+<header>
+    <div class="header">
+        <a href="/login">Log In</a>
+        <a href="/signup">Sign Up</a>
+        <a href="/homepage">Add Story</a>
+        <a href="/storiesviewer">Read Stories</a>
+        <a href="/aboutus">About Us</a>
+    </div>
+</header>
+<div class="container">
+    <h1>Sign Up</h1>
+    <form action="/signup" method="POST">
+
+        <label for="email">Email:</label>
+        <input type="email" id="email" name="email" required>
+
+        <label for="password">Password:</label>
+        <input type="password" id="password" name="password" required>
+
+        <label for="name">Name:</label>
+        <input type="text" id="name" name="name" required>
+
+        <input type="submit" value="Sign Up">
+    </form>
+
+<!--    <form action="/homepage" method="POST">-->
+<!--        <label for="story_date">Date:</label>-->
+<!--        <input type="date" id="story_date" name="story_date" required>-->
+
+<!--        <label for="main_event">Main Event:</label>-->
+<!--        <input type="text" id="main_event" name="main_event" required>-->
+
+<!--        <label for="story_source">Source:</label>-->
+<!--        <input type="text" id="story_source" name="story_source">-->
+
+<!--        <label for="story_place">Place:</label>-->
+<!--        <input type="text" id="story_place" name="story_place">-->
+
+<!--        <label for="story_text">Story:</label>-->
+<!--        <textarea id="story_text" name="story_text" rows="5" required></textarea>-->
+
+<!--        &lt;!&ndash; Submit Button &ndash;&gt;-->
+<!--        <input type="submit" value="Submit">-->
+<!--    </form>-->
+</div>
+<footer>
+    &copy; 2024 Our Website. All rights reserved.
+</footer>
+</body>
+</html>

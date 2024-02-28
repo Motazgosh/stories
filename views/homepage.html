@@ -1,0 +1,159 @@
+<!-- homepage.html -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Homepage</title>
+    <link rel="stylesheet" href="../css/homepage.css">
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f0f2f5;
+        }
+
+        h1 {
+            text-align: center;
+            color: #4caf50;
+            margin-bottom: 30px;
+        }
+
+        label {
+            display: block;
+            margin-bottom: 5px;
+            color: #333;
+        }
+
+        .header {
+            text-align: center;
+            margin-bottom: 20px;
+        }
+
+        .header a {
+            margin: 0 10px;
+            text-decoration: none;
+            color: #333;
+        }
+
+        nav {
+            text-align: center;
+            background-color: #333;
+            padding: 0.5rem;
+        }
+
+        nav a {
+            color: white;
+            text-decoration: none;
+            padding: 0.5rem 1rem;
+        }
+
+        nav a:hover {
+            background-color: #555;
+        }
+
+        main {
+            padding: 2rem;
+            text-align: center;
+            background-color: #fff;
+            margin: 0 auto;
+            margin-top: 100px;
+            box-shadow: 0px 0px 10px 0px rgba(0, 0, 0, 0.1);
+        }
+
+        footer {
+            background-color: #333;
+            color: white;
+            text-align: center;
+            padding: 1rem;
+            margin-top: 1rem;
+        }
+
+        fieldset {
+            border: 1px solid #ccc;
+            padding: 1rem;
+            margin-bottom: 1rem;
+            width: 50%;
+            margin-left: auto;
+            margin-right: auto;
+        }
+
+        legend {
+            font-size: 1.2rem;
+            font-weight: bold;
+            margin-bottom: 0.5rem;
+        }
+
+        label {
+            display: block;
+            margin-bottom: 5px;
+            color: #333;
+        }
+
+        input[type="date"], input[type="text"] {
+            width: 100%;
+            padding: 0.5rem;
+            margin-bottom: 1rem;
+            border: 1px solid #ccc;
+            border-radius: 4px;
+        }
+
+        textarea {
+            width: 100%;
+            padding: 0.5rem;
+            margin-bottom: 1rem;
+            border: 1px solid #ccc;
+            border-radius: 4px;
+            resize: vertical;
+        }
+
+        input[type="submit"] {
+            background-color: #222c22;
+            color: white;
+            padding: 0.5rem 1rem;
+            border: none;
+            border-radius: 4px;
+            cursor: pointer;
+        }
+
+        input[type="submit"]:hover {
+            background-color: #222c22;
+        }
+    </style>
+</head>
+<body>
+<header>
+    <div class="header">
+        <a href="/login">Log In</a>
+        <a href="/signup">Sign Up</a>
+        <a href="/homepage">Add Story</a>
+        <a href="/storiesviewer">Read Stories</a>
+        <a href="/aboutus">About Us</a>
+    </div>
+</header>
+<main>
+    <h1>Add Your Story</h1>
+    <form action="/homepage" method="POST">
+        <label for="story_date">Date:</label>
+        <input type="date" id="story_date" name="story_date" required>
+
+        <label for="main_event">Main Event:</label>
+        <input type="text" id="main_event" name="main_event" required>
+
+        <label for="story_source">Source:</label>
+        <input type="text" id="story_source" name="story_source">
+
+        <label for="story_place">Place:</label>
+        <input type="text" id="story_place" name="story_place">
+
+        <label for="story_text">Story:</label>
+        <textarea id="story_text" name="story_text" rows="5" required></textarea>
+
+        <!-- Submit Button -->
+        <input type="submit" value="Submit">
+    </form>
+</main>
+<footer>
+    &copy; 2024 Our Website. All rights reserved.
+</footer>
+</body>
+</html>
